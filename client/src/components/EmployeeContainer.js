@@ -30,7 +30,6 @@ class EmployeeContainer extends Component {
     event.preventDefault();
     const name = event.target.name;
     const value = event.target.value;
-    console.log(name, value);
     await this.setState((prevState) => (prevState[name] = value));
     const { search, filter, members } = this.state;
     await this.setState((prevState) => (prevState.results = members));
